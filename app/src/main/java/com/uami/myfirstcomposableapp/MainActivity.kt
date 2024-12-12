@@ -1,18 +1,16 @@
 package com.uami.myfirstcomposableapp
 
 import android.os.Bundle
-
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.uami.myfirstcomposableapp.Components.layout.MyComplexLayout
-import com.uami.myfirstcomposableapp.Components.layout.MyComplexLayoutTarea
-import com.uami.myfirstcomposableapp.Components.layout.MyRow
+import com.uami.myfirstcomposableapp.Components.layout.ConstraintBarrier
+import com.uami.myfirstcomposableapp.Components.layout.ConstraintExampleGuide
+import com.uami.myfirstcomposableapp.Components.layout.MyBasicConsaintLayout
 import com.uami.myfirstcomposableapp.ui.theme.MyFirstComposableAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +28,10 @@ class MainActivity : ComponentActivity() {
                     //MyColumn(Modifier.padding(innerPadding))
                     //MyRow(Modifier.padding(innerPadding))
                     //MyComplexLayout(Modifier.padding(innerPadding))
-                    MyComplexLayoutTarea(Modifier.padding(innerPadding))
+                    //MyComplexLayoutTarea(Modifier.padding(innerPadding))
+                    //ConstraintExampleGuide(Modifier.padding(innerPadding))
+                    //ConstraintExampleGuide(Modifier.padding(innerPadding))
+                    ConstraintBarrier(Modifier.padding(innerPadding))
                 }
             }
         }

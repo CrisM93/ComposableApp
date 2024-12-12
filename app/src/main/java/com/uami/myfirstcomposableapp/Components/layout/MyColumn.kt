@@ -1,6 +1,5 @@
 package com.uami.myfirstcomposableapp.Components.layout
 
-import androidx.compose.animation.Animatable
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
