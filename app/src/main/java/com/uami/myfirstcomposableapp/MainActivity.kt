@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import com.uami.myfirstcomposableapp.Components.layout.ConstraintBarrier
 import com.uami.myfirstcomposableapp.Components.layout.ConstraintExampleGuide
 import com.uami.myfirstcomposableapp.Components.layout.MyBasicConsaintLayout
+import com.uami.myfirstcomposableapp.Components.state.MyState
 import com.uami.myfirstcomposableapp.ui.theme.MyFirstComposableAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -31,7 +32,8 @@ class MainActivity : ComponentActivity() {
                     //MyComplexLayoutTarea(Modifier.padding(innerPadding))
                     //ConstraintExampleGuide(Modifier.padding(innerPadding))
                     //ConstraintExampleGuide(Modifier.padding(innerPadding))
-                    ConstraintBarrier(Modifier.padding(innerPadding))
+                    //MyBasicConsaintLayout(Modifier.padding(innerPadding))
+                    MyState(Modifier.padding(innerPadding))
                 }
             }
         }
