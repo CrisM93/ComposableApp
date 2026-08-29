@@ -8,6 +8,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.uami.myfirstcomposableapp.Components.MyTextField
+import com.uami.myfirstcomposableapp.Components.MyTextFieldParent
+import com.uami.myfirstcomposableapp.Components.MyTexts
 import com.uami.myfirstcomposableapp.Components.layout.ConstraintBarrier
 import com.uami.myfirstcomposableapp.Components.layout.ConstraintExampleGuide
 import com.uami.myfirstcomposableapp.Components.layout.MyBasicConsaintLayout
@@ -33,7 +36,8 @@ class MainActivity : ComponentActivity() {
                     //ConstraintExampleGuide(Modifier.padding(innerPadding))
                     //ConstraintExampleGuide(Modifier.padding(innerPadding))
                     //MyBasicConsaintLayout(Modifier.padding(innerPadding))
-                    MyState(Modifier.padding(innerPadding))
+                    //MyTexts(Modifier.padding(innerPadding))
+                    MyTextFieldParent(Modifier.padding(innerPadding))
                 }
             }
         }
