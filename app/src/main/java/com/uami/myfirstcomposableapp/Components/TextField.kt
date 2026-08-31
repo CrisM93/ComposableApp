@@ -1,11 +1,18 @@
 package com.uami.myfirstcomposableapp.Components
 
+import android.widget.Space
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.LocalTextStyle
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -15,9 +22,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -29,6 +38,8 @@ fun MyTextFieldParent(modifier: Modifier) {
         MySecondTextField(value = value) { value = it }
         MyAdvancedTextField(value = value) { value = it }
         MyPasswordTextField(value = value) { value = it }
+        Spacer(Modifier.height(20.dp))
+        MyOutLinedTextField(value = value) { value = it }
     }
 }
 
@@ -77,4 +88,13 @@ fun MyPasswordTextField(value: String, onValueChange: (String) -> Unit) {
             )
         }
     )
+}
+
+@Composable
+fun MyOutLinedTextField(value: String, onValueChange: (String) -> Unit) {
+    OutlinedTextField(
+        value = value,
+        onValueChange = { onValueChange(it) },
+        modifier = Modifier.fillMaxWidth().padding(16.dp))
+
 }
