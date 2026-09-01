@@ -10,6 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.uami.myfirstcomposableapp.Components.MyButtons
 import com.uami.myfirstcomposableapp.Components.MyImage
+import com.uami.myfirstcomposableapp.Components.MyNetworkImage
 import com.uami.myfirstcomposableapp.Components.MyTextField
 import com.uami.myfirstcomposableapp.Components.MyTextFieldParent
 import com.uami.myfirstcomposableapp.Components.MyTexts
@@ -41,7 +42,8 @@ class MainActivity : ComponentActivity() {
                     //MyTexts(Modifier.padding(innerPadding))
                     //MyTextFieldParent(Modifier.padding(innerPadding))
                     //MyButtons(Modifier.padding(innerPadding))
-                    MyImage(Modifier.padding(innerPadding))
+                    //MyImage(Modifier.padding(innerPadding))
+                    MyNetworkImage()
                 }
             }
         }
