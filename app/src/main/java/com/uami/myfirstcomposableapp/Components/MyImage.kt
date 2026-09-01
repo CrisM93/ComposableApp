@@ -1,5 +1,6 @@
 package com.uami.myfirstcomposableapp.Components
 
+import android.util.Log
 import android.widget.Scroller
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -81,5 +82,8 @@ fun MyImage(modifier: Modifier) {
 
 @Composable
 fun MyNetworkImage(modifier: Modifier){
-    AsyncImage(model = "https://www.google.com/search?sca_esv=b8c7a0b4c4f85b93&sxsrf=APpeQnsT1HGYZEOJGucql7_sbRlkrxNyCQ:1788232117624&udm=2&fbs=ABfTbFUDadgeu2mn4mYJ8iEZ1GUDd8ABuXxNzQEi57SWOuuPdfVFhgBbO079P_7XyIRUXsGD3WYkjpd1kQvRnhWpFJrtn9-1bAv_-3vuFh7eyZiYDaI9_Y96aGnFqpMkAXavDZWtoo5X2pmqqul3kRjKR64_X79bATkZZdfVzKJpk4LkLTNoxwqG927h9CDCR8dziyHIZ087fxEXioPWDspLCjqaJ0P5hg&q=imagenes&sa=X&ved=2ahUKEwiu8pXhs8yWAxXMyMkDHbAhMKYQtKgLegQIGxAB&biw=984&bih=927&dpr=1#sv=CAMSURoyKhBlLTVIOVR5TnBJcmluQzFNMg41SDlUeU5wSXJpbkMxTToOMHM5QWl3UHVrZllCWE0gBCoXCgFzEhBlLTVIOVR5TnBJcmluQzFNGAEwARgHIMCvhPYPSggQARgBIAEoAQ", contentDescription = "imaefrom net")
+    AsyncImage(
+        model = "https://i.pinimg.com/736x/85/59/d2/8559d2762630519ffdc78fafeba76e46.jpg", contentDescription = "imaefrom net",
+        modifier = modifier.size(250.dp),
+        onError = {Log.i("image", "Ha ocurrido un error ${it.result.throwable.message}")})
 }
