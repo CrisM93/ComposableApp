@@ -12,6 +12,7 @@ import com.uami.myfirstcomposableapp.Components.MyButtons
 import com.uami.myfirstcomposableapp.Components.MyIcon
 import com.uami.myfirstcomposableapp.Components.MyImage
 import com.uami.myfirstcomposableapp.Components.MyNetworkImage
+import com.uami.myfirstcomposableapp.Components.MySwitch
 import com.uami.myfirstcomposableapp.Components.MyTextField
 import com.uami.myfirstcomposableapp.Components.MyTextFieldParent
 import com.uami.myfirstcomposableapp.Components.MyTexts
@@ -50,7 +51,8 @@ class MainActivity : ComponentActivity() {
                     //MyNetworkImage(Modifier.padding(innerPadding))
                     //MyIcon()
                     //ProgressAdvance(Modifier.padding(innerPadding))
-                    ProgressAnimation(Modifier.padding(innerPadding))
+                    //ProgressAnimation(Modifier.padding(innerPadding))
+                    MySwitch(Modifier.padding(innerPadding))
                 }
             }
         }
