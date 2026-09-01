@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.uami.myfirstcomposableapp.Components.MyButtons
+import com.uami.myfirstcomposableapp.Components.MyIcon
 import com.uami.myfirstcomposableapp.Components.MyImage
 import com.uami.myfirstcomposableapp.Components.MyNetworkImage
 import com.uami.myfirstcomposableapp.Components.MyTextField
@@ -43,7 +44,8 @@ class MainActivity : ComponentActivity() {
                     //MyTextFieldParent(Modifier.padding(innerPadding))
                     //MyButtons(Modifier.padding(innerPadding))
                     //MyImage(Modifier.padding(innerPadding))
-                    MyNetworkImage(Modifier.padding(innerPadding))
+                    //MyNetworkImage(Modifier.padding(innerPadding))
+                    MyIcon()
                 }
             }
         }

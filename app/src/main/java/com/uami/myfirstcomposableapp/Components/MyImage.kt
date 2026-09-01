@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -81,9 +82,20 @@ fun MyImage(modifier: Modifier) {
 }
 
 @Composable
-fun MyNetworkImage(modifier: Modifier){
+fun MyNetworkImage(modifier: Modifier) {
     AsyncImage(
-        model = "https://i.pinimg.com/736x/85/59/d2/8559d2762630519ffdc78fafeba76e46.jpg", contentDescription = "imaefrom net",
+        model = "https://i.pinimg.com/736x/85/59/d2/8559d2762630519ffdc78fafeba76e46.jpg",
+        contentDescription = "imaefrom net",
         modifier = modifier.size(250.dp),
-        onError = {Log.i("image", "Ha ocurrido un error ${it.result.throwable.message}")})
+        onError = { Log.i("image", "Ha ocurrido un error ${it.result.throwable.message}") })
+}
+
+@Composable
+fun MyIcon() {
+    Icon(
+        painter = painterResource(R.drawable.baseline_person_24),
+        contentDescription = null,
+        modifier = Modifier.size(300.dp),
+        tint = Color.Blue
+    )
 }
