@@ -27,6 +27,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.unit.dp
+import com.airbnb.lottie.compose.LottieAnimation
+import com.airbnb.lottie.compose.LottieCompositionSpec
+import com.airbnb.lottie.compose.LottieConstants
+import com.airbnb.lottie.compose.rememberLottieComposition
+import com.uami.myfirstcomposableapp.R
 
 @Composable
 fun Progress(modifier: Modifier = Modifier) {
@@ -87,5 +92,19 @@ fun ProgressAdvance(modifier: Modifier = Modifier) {
         }
 
         Button(onClick = { isLoading = !isLoading }) { Text("Show/Hide") }
+    }
+}
+
+@Composable
+fun ProgressAnimation(modifier: Modifier = Modifier) {
+    val compotitin by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.burger))
+    Column(
+        modifier = modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        LottieAnimation(
+            composition = compotitin,
+            iterations = LottieConstants.IterateForever)
     }
 }

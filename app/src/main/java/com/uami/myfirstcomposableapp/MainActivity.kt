@@ -17,6 +17,7 @@ import com.uami.myfirstcomposableapp.Components.MyTextFieldParent
 import com.uami.myfirstcomposableapp.Components.MyTexts
 import com.uami.myfirstcomposableapp.Components.Progress
 import com.uami.myfirstcomposableapp.Components.ProgressAdvance
+import com.uami.myfirstcomposableapp.Components.ProgressAnimation
 import com.uami.myfirstcomposableapp.Components.layout.ConstraintBarrier
 import com.uami.myfirstcomposableapp.Components.layout.ConstraintExampleGuide
 import com.uami.myfirstcomposableapp.Components.layout.MyBasicConsaintLayout
@@ -48,7 +49,8 @@ class MainActivity : ComponentActivity() {
                     //MyImage(Modifier.padding(innerPadding))
                     //MyNetworkImage(Modifier.padding(innerPadding))
                     //MyIcon()
-                    ProgressAdvance(Modifier.padding(innerPadding))
+                    //ProgressAdvance(Modifier.padding(innerPadding))
+                    ProgressAnimation(Modifier.padding(innerPadding))
                 }
             }
         }
