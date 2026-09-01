@@ -80,6 +80,6 @@ fun MyImage(modifier: Modifier) {
 }
 
 @Composable
-fun MyNetworkImage(){
+fun MyNetworkImage(modifier: Modifier){
     AsyncImage(model = "https://www.google.com/search?sca_esv=b8c7a0b4c4f85b93&sxsrf=APpeQnsT1HGYZEOJGucql7_sbRlkrxNyCQ:1788232117624&udm=2&fbs=ABfTbFUDadgeu2mn4mYJ8iEZ1GUDd8ABuXxNzQEi57SWOuuPdfVFhgBbO079P_7XyIRUXsGD3WYkjpd1kQvRnhWpFJrtn9-1bAv_-3vuFh7eyZiYDaI9_Y96aGnFqpMkAXavDZWtoo5X2pmqqul3kRjKR64_X79bATkZZdfVzKJpk4LkLTNoxwqG927h9CDCR8dziyHIZ087fxEXioPWDspLCjqaJ0P5hg&q=imagenes&sa=X&ved=2ahUKEwiu8pXhs8yWAxXMyMkDHbAhMKYQtKgLegQIGxAB&biw=984&bih=927&dpr=1#sv=CAMSURoyKhBlLTVIOVR5TnBJcmluQzFNMg41SDlUeU5wSXJpbkMxTToOMHM5QWl3UHVrZllCWE0gBCoXCgFzEhBlLTVIOVR5TnBJcmluQzFNGAEwARgHIMCvhPYPSggQARgBIAEoAQ", contentDescription = "imaefrom net")
 }

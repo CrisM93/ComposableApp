@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
                     //MyTextFieldParent(Modifier.padding(innerPadding))
                     //MyButtons(Modifier.padding(innerPadding))
                     //MyImage(Modifier.padding(innerPadding))
-                    MyNetworkImage()
+                    MyNetworkImage(Modifier.padding(innerPadding))
                 }
             }
         }
