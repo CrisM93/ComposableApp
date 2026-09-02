@@ -8,7 +8,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.uami.myfirstcomposableapp.Components.Example
 import com.uami.myfirstcomposableapp.Components.MyButtons
+import com.uami.myfirstcomposableapp.Components.MyCheckBox
 import com.uami.myfirstcomposableapp.Components.MyIcon
 import com.uami.myfirstcomposableapp.Components.MyImage
 import com.uami.myfirstcomposableapp.Components.MyNetworkImage
@@ -16,9 +18,11 @@ import com.uami.myfirstcomposableapp.Components.MySwitch
 import com.uami.myfirstcomposableapp.Components.MyTextField
 import com.uami.myfirstcomposableapp.Components.MyTextFieldParent
 import com.uami.myfirstcomposableapp.Components.MyTexts
+import com.uami.myfirstcomposableapp.Components.ParentCheckBoxes
 import com.uami.myfirstcomposableapp.Components.Progress
 import com.uami.myfirstcomposableapp.Components.ProgressAdvance
 import com.uami.myfirstcomposableapp.Components.ProgressAnimation
+import com.uami.myfirstcomposableapp.Components.TriStateCheckBox
 import com.uami.myfirstcomposableapp.Components.layout.ConstraintBarrier
 import com.uami.myfirstcomposableapp.Components.layout.ConstraintExampleGuide
 import com.uami.myfirstcomposableapp.Components.layout.MyBasicConsaintLayout
@@ -52,7 +56,9 @@ class MainActivity : ComponentActivity() {
                     //MyIcon()
                     //ProgressAdvance(Modifier.padding(innerPadding))
                     //ProgressAnimation(Modifier.padding(innerPadding))
-                    MySwitch(Modifier.padding(innerPadding))
+                    //ParentCheckBoxes(Modifier.padding(innerPadding))
+                    //TriStateCheckBox(Modifier.padding(innerPadding))
+                    Example(Modifier.padding(innerPadding))
                 }
             }
         }
